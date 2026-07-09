@@ -58,4 +58,122 @@ while loops, for loops, lists, random, and turtle graphics.
 Build your game below. Delete this line and start coding!
 '''
 
-print("My game is not built yet!")
+#print("My game is not built yet!")
+
+
+#wordlist = [
+ #   "ocean",
+  #  "unicorn",
+   # "mermaid",
+    #"coachspodick",
+    #Hippopotomonstrosesquippedaliophobia
+    #...
+#]
+
+
+#import random
+
+#print("welcome to Hangman!")
+
+
+
+#word_to_guess_ = random.choice(wordlist)
+#print("word_to_guess")
+
+#blanks = ""
+#word_length = len("word_to_guess")
+
+
+# for i in range(word_length):
+#     blanks = blanks + "_"
+#     print("Word to guess:"  + blanks)
+
+#guess = input("guess a letter").lower()
+
+#letters_guessed = []
+#your_word = ""
+#for letter in ("word_to_guess"):
+   # if letter == guess:
+      #  your_word = your_word + letter
+      #  letters_guessed.append(guess)
+   # elif letter in letters_guessed:
+       # your_word = your_word + letter
+    #else:
+        #your_word = your_word + "_"
+    
+#number_of_lives = 6
+
+#game_over = False
+
+
+
+#your_word = ""
+
+#for letter in ("word_to_guess"):  
+  #f letter == guess:
+    #your_word = your_word + letter
+    #letters_guessed.append(guess)
+  #elif letter in letters_guessed:
+    #your_word = your_word + letter
+  #else:
+      #your_word_ = your_word + "_"
+#print("word to gues:",your_word)
+  
+
+#if guess in letters_guessed:
+    #print(f"\nYou've already guessed {guess}")
+
+# if "_" not in your_word:
+#     game_over = True
+#     print("\n You have guessed the word! YOU WIN!")
+
+# if guess not in (word_to_guess):
+#     number_of_lives -= 1
+#     print(f"\You guessed {guess}, thats not in the word. You lose a life.")
+    
+    # if number_of_lives == 0:
+    #   game_over = True
+    #   print(f"\nIT WAS {word_to_guess}! YOU LOSE!")
+
+
+
+
+
+
+
+
+words = ["ocean", "unicorn", "mermaid", "coachspoddick", "hippopotomonstrosesquippedaliophobia"]
+blank = "_"
+
+for word in words:
+    empty = ""
+    for letter in range(len(word)):
+      guess = input("Guess a letter: ")
+      if guess == word[letter]:
+        print("That is a correct letter!")
+        empty += word[letter]
+        print(empty)
+        print("~"*15)
+      else:
+        print("WRONG LETTER.")
+        empty += blank
+        print(empty)
+        print("~"*15)
+        continue
+
+
+      
+      
+
+
+
+
+
+
+print(empty)
+print("~"*15)
+print("going to next word")
+print()
+ 
+print(words)
+while
